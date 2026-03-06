@@ -62,7 +62,7 @@ const Explore = () => {
                     </div>
                     <div className="flex flex-col gap-2">
                         <span className="mono-label text-white/30">EXPERIENCE</span>
-                        <span className="text-2xl font-bold text-white">4+ YEARS</span>
+                        <span className="text-2xl font-bold text-white">1+ YEARS</span>
                     </div>
                     <div className="flex flex-col gap-2">
                         <span className="mono-label text-white/30">FOCUS</span>
