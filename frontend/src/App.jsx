@@ -4,6 +4,7 @@ import Lenis from 'lenis';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { AnimatePresence } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 
 import Hero from './components/Hero';
 import Explore from './components/Explore';
@@ -103,6 +104,7 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/archive" element={<Archive />} />
       </Routes>
+      <Analytics />
     </Router>
   );
 }
