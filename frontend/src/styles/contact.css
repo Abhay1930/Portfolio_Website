@@ -1,0 +1,137 @@
+/* Additional Contact Component Styles */
+
+.dark-section {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 2rem;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.contact-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-giant-title {
+    font-size: clamp(5rem, 20vw, 22rem);
+    font-weight: 700;
+    line-height: 0.8;
+    letter-spacing: -0.05em;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.contact-subtitle {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 3rem;
+    color: var(--text-light);
+}
+
+.contact-action-wrapper {
+    margin-bottom: 3rem;
+}
+
+.contact-drop-line {
+    background: transparent;
+    border: none;
+    color: var(--text-light);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: opacity var(--transition-fast);
+    font-family: inherit;
+}
+
+.contact-drop-line:hover {
+    opacity: 0.7;
+}
+
+.contact-email {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 300;
+    color: var(--text-light);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: opacity var(--transition-fast);
+}
+
+.contact-email:hover {
+    opacity: 0.7;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: inherit;
+    font-size: 1.1rem;
+    color: white;
+    transition: border-color var(--transition-fast);
+    outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom-color: white;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .submit-btn {
+    padding: 1.2rem 2rem;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: transform var(--transition-fast);
+    margin-top: 1rem;
+}
+
+.contact-form .submit-btn:hover {
+    transform: translateY(-2px);
+}
