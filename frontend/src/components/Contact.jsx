@@ -249,10 +249,6 @@ const Contact = () => {
                                 </svg>
                             </div>
                         </button>
-                        <div className="h-3 w-[1px] bg-white/10"></div>
-                        <span className="mono-label opacity-40 text-[8px] tracking-[0.5em] uppercase">
-                            @ALL RIGHT RESERVED TO <a href="https://www.instagram.com/codeafe/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline decoration-white/20 underline-offset-4">CODEAFE</a>
-                        </span>
                     </div>
                 </div>
             </footer>
