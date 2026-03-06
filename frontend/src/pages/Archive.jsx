@@ -11,7 +11,7 @@ const Archive = () => {
 
         const fetchProjects = async () => {
             try {
-                const res = await fetch('http://localhost:5001/api/projects');
+                const res = await fetch('https://portfolio-backend-p391.onrender.com/api/projects');
                 if (res.ok) {
                     const data = await res.json();
                     setProjects(data.map(p => ({

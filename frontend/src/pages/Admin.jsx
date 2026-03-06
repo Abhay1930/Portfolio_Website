@@ -23,8 +23,8 @@ const Admin = () => {
         const headers = { 'Authorization': `Bearer ${token}` };
         try {
             const [projRes, msgRes] = await Promise.all([
-                fetch('http://localhost:5001/api/projects'),
-                fetch('http://localhost:5001/api/messages', { headers })
+                fetch('https://portfolio-backend-p391.onrender.com/api/projects'),
+                fetch('https://portfolio-backend-p391.onrender.com/api/messages', { headers })
             ]);
             if (projRes.ok) setProjects(await projRes.json());
             if (msgRes.ok) setMessages(await msgRes.json());
@@ -36,7 +36,7 @@ const Admin = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch('http://localhost:5001/api/admin/login', {
+            const res = await fetch('https://portfolio-backend-p391.onrender.com/api/admin/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username, password })
@@ -61,7 +61,7 @@ const Admin = () => {
             tags: newProject.tags.split(',').map(t => t.trim())
         };
         try {
-            const res = await fetch('http://localhost:5001/api/projects', {
+            const res = await fetch('https://portfolio-backend-p391.onrender.com/api/projects', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ const Admin = () => {
 
     const handleDeleteMessage = async (id) => {
         try {
-            await fetch(`http://localhost:5001/api/messages/${id}`, {
+            await fetch(`https://portfolio-backend-p391.onrender.com/api/messages/${id}`, {
                 method: 'DELETE',
                 headers: { 'Authorization': `Bearer ${token}` }
             });
@@ -94,7 +94,7 @@ const Admin = () => {
     const handleDeleteProject = async (id) => {
         if (!window.confirm('Are you sure you want to delete this project?')) return;
         try {
-            const res = await fetch(`http://localhost:5001/api/projects/${id}`, {
+            const res = await fetch(`https://portfolio-backend-p391.onrender.com/api/projects/${id}`, {
                 method: 'DELETE',
                 headers: { 'Authorization': `Bearer ${token}` }
             });
