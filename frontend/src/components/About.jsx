@@ -184,8 +184,8 @@ const About = () => {
                         </p>
 
                         <div className="flex flex-wrap gap-6 pt-8 border-t border-white/5">
-                            <a href="https://linkedin.com/in/abhaysinghtomar" className="btn-welcome border-white/10 hover:bg-white hover:text-black min-w-[160px] text-center">LINKEDIN</a>
-                            <a href="https://github.com/abhaysinghtomar" className="btn-welcome border-white/20 hover:bg-white hover:text-black min-w-[160px] text-center">GITHUB REPO</a>
+                            <a href="https://www.linkedin.com/in/devabhay/" className="btn-welcome border-white/10 hover:bg-white hover:text-black min-w-[160px] text-center">LINKEDIN</a>
+                            <a href="https://github.com/Abhay1930" className="btn-welcome border-white/20 hover:bg-white hover:text-black min-w-[160px] text-center">GITHUB REPO</a>
                         </div>
                     </div>
                 </div>
