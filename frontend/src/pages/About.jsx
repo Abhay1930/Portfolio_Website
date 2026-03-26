@@ -200,8 +200,8 @@ const About = () => {
                     </AnimatePresence>
 
                     <div style={{ marginTop: '3rem', display: 'flex', gap: '1.5rem' }}>
-                        <a href="https://github.com/abhaysinghtomar" className="nav-pill">GITHUB</a>
-                        <a href="https://linkedin.com/in/abhay-singh-tomar" className="nav-pill">LINKEDIN</a>
+                        <a href="https://github.com/Abhay1930" className="nav-pill">GITHUB</a>
+                        <a href="https://www.linkedin.com/in/devabhay/" className="nav-pill">LINKEDIN</a>
                     </div>
                 </motion.div>
             </div>

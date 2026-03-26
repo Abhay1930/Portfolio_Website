@@ -69,10 +69,10 @@ const Home = () => {
                 variants={itemVariants}
                 style={{ position: 'absolute', bottom: '3rem', left: '3rem', display: 'flex', gap: '1.5rem', zIndex: 10 }}
             >
-                <a href="https://github.com" target="_blank" rel="noreferrer" style={{ color: 'white', opacity: 0.7, transition: '0.2s' }} onMouseOver={e => e.currentTarget.style.opacity = 1} onMouseOut={e => e.currentTarget.style.opacity = 0.7}>
+                <a href="https://github.com/Abhay1930" target="_blank" rel="noreferrer" style={{ color: 'white', opacity: 0.7, transition: '0.2s' }} onMouseOver={e => e.currentTarget.style.opacity = 1} onMouseOut={e => e.currentTarget.style.opacity = 0.7}>
                     <Github size={24} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer" style={{ color: 'white', opacity: 0.7, transition: '0.2s' }} onMouseOver={e => e.currentTarget.style.opacity = 1} onMouseOut={e => e.currentTarget.style.opacity = 0.7}>
+                <a href="https://www.linkedin.com/in/devabhay/" target="_blank" rel="noreferrer" style={{ color: 'white', opacity: 0.7, transition: '0.2s' }} onMouseOver={e => e.currentTarget.style.opacity = 1} onMouseOut={e => e.currentTarget.style.opacity = 0.7}>
                     <Linkedin size={24} />
                 </a>
                 <a href="https://twitter.com" target="_blank" rel="noreferrer" style={{ color: 'white', opacity: 0.7, transition: '0.2s' }} onMouseOver={e => e.currentTarget.style.opacity = 1} onMouseOut={e => e.currentTarget.style.opacity = 0.7}>
